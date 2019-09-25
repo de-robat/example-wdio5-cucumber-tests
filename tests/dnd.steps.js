@@ -16,7 +16,7 @@ When('I drag and drop', () => {
     //$('.dragel').dragAndDrop($('#dragtarget'), 10);
 });
 
-When('I manually drag over and out of the drag target', function () {
+When('I manually drag out of the dragzone and drop on the drag target', function () {
     let dragel = $('.dragel');
     let droptarget = $('#dragtarget');
 
