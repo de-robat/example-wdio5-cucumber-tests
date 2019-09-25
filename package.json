@@ -1,0 +1,27 @@
+{
+  "name": "example-wdio5-native-dnd",
+  "version": "1.0.0",
+  "description": "evaluating a troublesome setup with the native dnd api",
+  "scripts": {
+    "test": "npx wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/de-robat/example-wdio5-native-dnd.git"
+  },
+  "author": "robert@atroo.de",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/de-robat/example-wdio5-native-dnd/issues"
+  },
+  "homepage": "https://github.com/de-robat/example-wdio5-native-dnd#readme",
+  "dependencies": {
+    "@wdio/cli": "^5.11.13",
+    "@wdio/cucumber-framework": "^5.11.13",
+    "@wdio/local-runner": "^5.11.13",
+    "@wdio/selenium-standalone-service": "^5.11.2",
+    "@wdio/spec-reporter": "^5.11.7",
+    "@wdio/sync": "^5.12.3",
+    "webdriverio": "^5.12.5"
+  }
+}

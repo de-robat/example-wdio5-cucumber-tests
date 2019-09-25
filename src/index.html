@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WDIO5 test</title>
+    <script>
+        function load() {
+            var dragSourceContainer = document.querySelector('#dragsources')
+            var dragTarget = document.querySelector('#dragtarget')
+            //source events
+            dragSourceContainer.addEventListener('dragstart', logEvent, false);
+            dragSourceContainer.addEventListener('dragend', logEvent, false);
+
+            //target events
+            dragTarget.addEventListener('dragenter', logEvent, false);
+            dragTarget.addEventListener('dragleave', logEvent, false);
+            dragTarget.addEventListener('dragover', logEvent, false);
+            dragTarget.addEventListener('drop', logEvent, false);
+        }
+
+        function logEvent(e) {
+            //make the droptraget valid: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations#drop
+            if (['dragenter', 'dragover'].indexOf(e.type) != -1) {
+                e.preventDefault();
+            }
+            console.log("Evt: ", e.type);
+            if (window.eventLog) {
+                window.eventLog.push(e.type);
+            }
+        };
+
+    </script>
+    <style>
+        .dragcontainer {
+            margin: 5rem;
+            border: 1px solid #e3e3e3;
+            padding: 1rem;
+            width: 10rem;
+            height: 10rem;
+        }
+    </style>
+</head>
+
+<body onload="load()">
+    <div id="dragsources" class="dragcontainer">
+        <div draggable="true" class="dragel">
+            DragElem 1
+        </div>
+    </div>
+    <div id="dragtarget" class="dragcontainer">
+
+    </div>
+</body>
+
+</html>
