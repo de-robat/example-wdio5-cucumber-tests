@@ -13,7 +13,7 @@ Given('I am seeing the test page', () => {
 });
 
 When('I drag and drop', () => {
-    //$('.dragel').dragAndDrop($('#dragtarget'), 10);
+    $('.dragel').dragAndDrop($('#dragtarget'), 10);
 });
 
 When('I manually drag out of the dragzone and drop on the drag target', function () {

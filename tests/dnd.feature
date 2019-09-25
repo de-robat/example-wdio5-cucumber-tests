@@ -8,7 +8,7 @@ Feature: DND
         And a drop event should be raised
         And a dragend event should be raised
 
-    Scenario: Drag and Drop should raise all native Events when doen with perf actions
+    Scenario: Drag and Drop should raise all native Events when done with perf actions
         Given I am seeing the test page
         When I manually drag out of the dragzone and drop on the drag target
         Then a dragstart event should be raised
