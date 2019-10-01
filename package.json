@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "evaluating a troublesome setup with the native dnd api",
   "scripts": {
-    "test": "npx wdio wdio.conf.js"
+    "test": "npx wdio wdio.conf.js --color",
+    "test:dnd": "npx wdio wdio.conf.dnd.js --color",
+    "test:missing": "npx wdio wdio.conf.missing.js --color"
   },
   "repository": {
     "type": "git",
