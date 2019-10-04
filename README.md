@@ -12,7 +12,12 @@ to run only this scenario type `npm run test:dnd`
 
 ToDo: For some reason the browser window needs focus for the dnd tests to run, so keep it in foreground
 
-# 2nd Scenario
+# 2nd Scenario - FIXED since @wdio/cucumber-framework@5.14.3
+
+## update
+this issue has been addresed and resolved.
+
+## orig
 
 https://github.com/webdriverio/webdriverio/issues/4555
 
